@@ -16,7 +16,6 @@ body {
     margin: 0;
     background: url("{{ site.baseurl }}/images/bg.jpg") fixed;
     background-size: cover;
-    overflow: hidden;
     -webkit-transition: opacity 400ms;
     -moz-transition: opacity 400ms;
     transition: opacity 400ms;
@@ -26,6 +25,13 @@ body {
     padding: 0 10%;
     width: 80%;
     height: 100vh;
+
+    h2 {
+        margin: 0 auto 1em;
+        padding: 1em;
+        text-align: left;
+        border-bottom: 1px solid #555;
+    }
 }
 
 #entrance {
@@ -74,11 +80,15 @@ body {
     .slogan {
         h2 {
             position: relative;
+            margin: 0 auto;
+            padding: .5em;
             top: 20vh;
             font-size: 2.5em;
             color: #fff;
+            text-align: center;
             font-weight: 400;
             letter-spacing: .25em;
+            border:none;
         }
 
         p {
@@ -94,13 +104,6 @@ body {
     @extend .container;
     background-color: #eee;
     text-align: center;
-
-    h2 {
-        margin: 0 auto 1em;
-        padding: 2em 1em 1em;
-        text-align: left;
-        border-bottom: 1px solid #555;
-    }
 
     ul {
         padding: 0;
@@ -140,13 +143,6 @@ body {
     @extend .container;
     background-color: #fff;
     text-align: center;
-
-    h2 {
-        margin: 0 auto .5em;
-        padding: 1em;
-        text-align: left;
-        border-bottom: 1px solid #555;
-    }
 
     ul {
         padding: 0;
