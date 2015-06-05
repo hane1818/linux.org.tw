@@ -1,0 +1,50 @@
+#nav-toggle {display: none;}
+
+@media screen and (max-width: 726px) {
+    #entrance .topbar h1 {
+        margin: 0 auto;
+        padding: 1em 1em 0;
+    }
+}
+
+@media screen and (min-width: 627px) {
+    nav > label  {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 627px) {
+
+
+    #entrance .topbar nav {
+        display: block;
+        padding-bottom: 1em;
+
+        label {
+            display: block;
+            text-align: right;
+            margin-right: 2em;
+        }
+
+        ul {display: none;}
+
+        #nav-toggle:checked ~ ul {
+            display: inline-block;
+            padding: 0;
+            list-style-type: none;
+
+            li {
+                display: block;
+                padding: 1em;
+
+                a {
+                    padding: 1em;
+                    font-size: 1.15em;
+                    color: #fff;
+                    text-decoration: underline;
+                    letter-spacing: .25em;
+                }
+            }
+        }
+    }
+}
