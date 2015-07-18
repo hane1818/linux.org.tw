@@ -121,28 +121,36 @@ body {
 
         li {
             display: inline-block;
-            margin: 50px 25px;
-            padding: 0px;
+            margin: 70px 25px;
+            padding: 0;
             width: 25%;
             border: 1px solid #46A3FF;
-            box-shadow: 15px 15px 0px #C4E1FF;
+            background-color: #7A93AA;
+            box-shadow: 5px 5px 0px #ccc;
 
             a {
                 display: block;
-                padding: 80px 2.5%;
-                background-color: rgba(255,255,255,0.75);
-                color: #434343;
+                color: #fff;
                 text-decoration: none;
+
+                img {
+                  padding: 40px;
+                }
 
                 span
                 {
                     display: block;
-                    margin: 1em auto;
                     font-size: 1.25em;
+                    background: #628191;
 
                     &.zh {
+                        padding: 40px 0 10px;
                         font-weight: 600;
                         font-size: 1.75em;
+                    }
+
+                    &.en {
+                      padding: 10px 0 40px;
                     }
                 }
             }
