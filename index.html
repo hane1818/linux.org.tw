@@ -9,8 +9,8 @@
     <body>
 
         <div class="main">
-            <section>
-                <div id="entrance" class="section">
+
+                <div id="entrance">
 
                     <div class="topbar">
                         <h1>
@@ -28,13 +28,13 @@
                             <input type="checkbox" id="nav-toggle">
                             <ul>
                                 <li>
-                                    <a href="javascript:moveto(1)">教學文件</a>
+                                    <a href="#">教學文件</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:moveto(2)">社群串連</a>
+                                    <a href="#">社群串連</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:moveto(3)">貢獻心力</a>
+                                    <a href="#">貢獻心力</a>
                                 </li>
                             </ul>
                         </nav>
@@ -43,15 +43,12 @@
                         <h2>最尊重使用者的作業系統</h2>
                         <p>
                             在沒有圍牆的世界，大門又何須存在？
-                            <!--你將能理解自由的可貴！-->
-                            <!--你有權完全掌握你的電腦！-->
-                            <!--好的 OS 把你當人看，不好的 OS 把你當笨蛋。-->
                         </p>
                     </div>
                 </div>
-            </section>
-            <section>
-                <div id="tutorial" class="section">
+
+
+                <div id="tutorial">
                     <h2>
                         關於 Linux …
                     </h2>
@@ -88,9 +85,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section>
-                <div id="community" class="section">
+
+
+                <div id="community">
 
                     <h2>
                         各發行版的社群…
@@ -98,32 +95,32 @@
 
                     <ul>
                         <li>
-                            <a href="#">
-                                <img src="http://placekitten.com/g/161/121" alt="">
+                            <a href="http://fedora.linux.org.tw/">
+                                <img src="{{ site.baseurl }}/images/fedora.svg" alt="" width="50">
                                 <span>
                                     Fedora
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="http://placekitten.com/g/160/120" alt="">
+                            <a href="http://www.ubuntu-tw.org/">
+                                <img src="{{ site.baseurl }}/images/ubuntu.svg" alt="">
                                 <span>
                                     Ubuntu
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="http://placekitten.com/161/120" alt="">
+                            <a href="https://www.debian.org/index.zh-tw.html">
+                                <img src="{{ site.baseurl }}/images/debian.png" alt="">
                                 <span>
                                     Debian
                                 </span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                <img src="http://placekitten.com/160/121" alt="">
+                            <a href="http://archlinux.tw/">
+                                <img src="{{ site.baseurl }}/images/arch.png" alt="">
                                 <span>
                                     Arch
                                 </span>
@@ -131,8 +128,8 @@
                         </li>
 
                         <li>
-                            <a href="#">
-                                <img src="http://placekitten.com/g/161/120" alt="">
+                            <a href="https://zh-tw.opensuse.org/">
+                                <img src="{{ site.baseurl }}/images/opensuse.png" alt="">
                                 <span>
                                     OpenSUSE
                                 </span>
@@ -140,8 +137,8 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-            <section>
+
+
                 <div id="contribution">
 
                     <h2>
@@ -167,7 +164,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <img src="http://placekitten.com/170/170" alt="">
+                                <img src="http://placekitten.com/g/171/170" alt="">
                                 <span>
                                     翻譯中文
                                 </span>
@@ -192,30 +189,10 @@
 
                       <span>本站原始碼</span>
                     </a>
-
-
-
                 </footer>
-            </section>
+
         </div>
 
     </body>
 
 </html>
-
-<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="{{ site.baseurl }}/javascript/onepage-scroll.min.js"></script>
-
-<script type="text/javascript">
-    $(".main").onepage_scroll({
-        sectionContainer: "section",
-        pagination: true,
-        updateURL: false,
-        loop: false
-    });
-
-    function moveto(num) {
-        for(var a=1;a<=num;a++)
-            $(".main").moveDown();
-    }
-</script>
