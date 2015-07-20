@@ -112,11 +112,16 @@ body {
 #tutorial {
     @extend .container;
     min-height: 500px;
-    height: 100vh;
+    height: auto;
     background-color: #eee;
+
+    h2 {
+      margin: 0;
+    }
 
     ul {
         padding: 0;
+        margin: 0;
         list-style-type: none;
 
         li {
@@ -161,7 +166,7 @@ body {
 #community {
     @extend .container;
     min-height: 650px;
-    height: 100vh;
+    height: auto;
     background-color: #fff;
 
     ul {
